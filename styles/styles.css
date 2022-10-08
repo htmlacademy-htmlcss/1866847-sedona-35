@@ -28,17 +28,20 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-button {
-  font-family: "inherit";
+.button-blue {
+  font-family: "PT-Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
   color: #FFFFFF;
   background-color: #82B3D3;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+  width: 232px;
+  height: 52px;
+  border-radius: 0 4px 4px 0;
 }
 
 .navigation-link {
@@ -55,8 +58,8 @@ button {
 /* Main */
 .hero {
   background-image: url(../images/home-page/hero-spacebar.svg), url(../images/home-page/main-image-sedona.jpg);
-  Width: 1200px;
-  Height: 485px;
+  width: 1200px;
+  height: 485px;
   margin: 0 auto;
   color: #FFFFFF;
   background-color: #000000;
@@ -128,7 +131,7 @@ button {
 
 /* Newsletter */
 .index-columns {
-  background-image: url(../images/home-page/Subscribe.jpg);
+  background-image: url(../images/home-page/subscribe.jpg);
   max-width: 1200px;
   min-height: 415px;
   margin: 0 auto;
@@ -162,12 +165,6 @@ button {
   border: none;
 }
 
-.newsletter-button {
-  width: 232px;
-  height: 52px;
-  border-radius: 0 4px 4px 0;
-}
-
 /* Footer */
 .footer-contacts-phone {
   text-decoration-line: none;
@@ -188,7 +185,6 @@ button {
 .main-inner {
   background-image: url(../images/catalog-page/filter-content.jpg);
   max-width: 1200px;
-
   color: #FFFFFF;
   background-color: #000000;
 }
@@ -219,6 +215,8 @@ button {
 
 .button-submit {
   font-family: "PT Sans", sans-serif;
+  color: #FFFFFF;
+  background-color: #82B3D3;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -233,6 +231,7 @@ button {
 
 .button-reset {
   font-family: "PT Sans", sans-serif;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -306,7 +305,7 @@ button {
 }
 
 .pagination-link {
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
   line-height: 16px;
@@ -320,7 +319,7 @@ button {
 
 .pagination-link-next {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 /* Newsletter */
