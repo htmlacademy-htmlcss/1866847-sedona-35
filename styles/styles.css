@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT-Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-blue {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  width: 232px;
+  height: 52px;
+  border-radius: 0 4px 4px 0;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+/* Main */
+.hero {
+  background-image: url(../images/home-page/hero-spacebar.svg), url(../images/home-page/main-image-sedona.jpg);
+  width: 1200px;
+  height: 485px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  background-color: #000000;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center;
+}
+
+.main-image-sedona {
+  display: block;
+  margin: auto;
+}
+
+/* Advantages*/
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-title-hero {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.advantages-description-hero {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  font-weight: 400;
+}
+
+.advantages-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+.advantages-title-text {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-description {
+  color: #333333;
+  font-weight: 400;
+}
+
+/* Appointment */
+.appointment-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.appointment-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+/* Newsletter */
+.index-columns {
+  background-image: url(../images/home-page/subscribe.jpg);
+  max-width: 1200px;
+  min-height: 415px;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.newsletter-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.field {
+  width: 452px;
+  height: 52px;
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+/* Footer */
+.footer-contacts-phone {
+  text-decoration-line: none;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Catalog-filtet */
+.newsletter {
+  align-items: center;
+  text-align: center;
+}
+
+.main-inner {
+  background-image: url(../images/catalog-page/filter-content.jpg);
+  max-width: 1200px;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filtet {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.button-submit {
+  font-family: "PT Sans", sans-serif;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  width: 191px;
+  height: 36px;
+  border: none;
+}
+
+.button-reset {
+  font-family: "PT Sans", sans-serif;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  width: 191px;
+  height: 36px;
+  border: none;
+  background: transparent;
+}
+
+/* hotel selection */
+.select-control-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  width: 292px;
+  height: 49px;
+}
+
+.button-button-slides {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* product-card */
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.product-card-descriptoin {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.product-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+/* pagination */
+.pagination {
+  background-color: #FFFFFF;
+}
+
+.pagination-link {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-link-next {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/* Newsletter */
+.newsletter-title-subscription {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.newsletter-description-subscription {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
