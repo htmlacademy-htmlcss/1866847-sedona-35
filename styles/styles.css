@@ -21,7 +21,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "PT-Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -87,7 +87,6 @@ body {
 .navigation-link {
   padding: 20px 16px;
   display: block;
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   color: inherit;
@@ -165,8 +164,6 @@ body {
 
 .title-hero {
   width: 620px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -177,8 +174,6 @@ body {
 }
 
 .description-hero {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -188,7 +183,6 @@ body {
 }
 
 .advantages-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -203,8 +197,6 @@ body {
   color: #333333;
   font-weight: 400;
   width: 230px;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -234,26 +226,20 @@ body {
 }
 
 .advantages-subscribe-blue {
-  font-family: "PT Sans", sans-serif;
   width: 175px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   font-weight: 700;
-  text-align: center;
   margin: 0 auto;
   margin-bottom: 62px;
 }
 
 .advantages-description-blue {
   width: 230px;
-  font-family: "PT Sans", sans-serif;
-  ;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -265,7 +251,6 @@ body {
 
 .appointment-title {
   width: 297px;
-  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -275,7 +260,6 @@ body {
 }
 
 .appointment-description {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -288,7 +272,6 @@ body {
 
 .appointment-button {
   display: block;
-  font-family: "PT-Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -299,7 +282,6 @@ body {
   text-transform: uppercase;
   border: none;
   width: 376px;
-  height: 52px;
   margin: auto;
 }
 
@@ -319,7 +301,6 @@ body {
 
 .newsletter-title {
   width: 404px;
-  font-family: 'PT Sans', sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -332,7 +313,6 @@ body {
 
 .newsletter-description {
   width: 475px;
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -554,7 +534,6 @@ body {
   text-transform: uppercase;
   margin-top: 7px;
   margin-bottom: 7px;
-
 }
 
 .select-control {
@@ -600,10 +579,7 @@ body {
   margin: 0;
 }
 
-.product-card {
-  background-image: url(../images/catalog-page/catalog/amara.svg);
-  width: 345px;
-}
+
 
 .product-card-image {
   margin: 20px 20px 16px;
@@ -655,7 +631,6 @@ body {
   display: block;
   box-sizing: border-box;
   width: 60px;
-  height: 60px;
   color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
@@ -689,7 +664,6 @@ body {
 
 .newsletter-title-subscription {
   width: 404px;
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -700,7 +674,6 @@ body {
 }
 
 .newsletter-description-subscription {
-  font-family: "PT Sans", sans-serif;
   width: 475px;
   font-weight: 400;
   font-size: 22px;
