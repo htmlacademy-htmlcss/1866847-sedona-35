@@ -27,7 +27,7 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #FFFFFF;
-  width: 1200px;
+  width: 1280px;
   min-height: 100%;
   margin: 0 auto;
 
@@ -39,49 +39,81 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.button-subscribe {
-  font-family: "PT-Sans", sans-serif;
+
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  color: #FFFFFF;
-  background-color: #82B3D3;
   text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
+  border-color: #82B3D3;
+  padding: 8px 20px;
   border: none;
-  width: 232px;
-  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: inline-block;
+}
 
+.navigation-button {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 34px;
+  border: none;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 .page-header {
   display: flex;
 }
 
-.navigation {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .navigation-list {
+  width: 439px;
   display: flex;
   flex-wrap: wrap;
-  width: 615px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.navigation-user .navigation-link {
-  min-width: 20px;
-  min-height: 20px;
+.navigation-user {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 70px;
 }
 
-.navigation-user {
-  width: 318px;
-  margin-left: auto;
+.navigation-user .navigation-user-link {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.navigation-user-link:nth-child(1) {
+  background-image: url("../images/home-page/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user-link:nth-child(2) {
+  background-image: url(../images/home-page/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .navigation-link {
@@ -102,6 +134,8 @@ body {
   margin-right: 28px;
   padding: 0;
   display: block;
+  margin-bottom: -12px;
+  z-index: 1;
 }
 
 /* Main */
@@ -247,6 +281,7 @@ body {
 .appointment {
   padding-top: 96px;
   padding-bottom: 96px;
+
 }
 
 .appointment-title {
@@ -271,18 +306,20 @@ body {
 }
 
 .appointment-button {
-  display: block;
+  width: 376px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
   background-color: #756157;
-  text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
-  border: none;
-  width: 376px;
-  margin: auto;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 8px 50px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
 }
 
 /* Newsletter */
@@ -322,15 +359,39 @@ body {
   margin-bottom: 54px;
 }
 
-.field {
-  width: 452px;
-  height: 52px;
-  background: #F2F2F2;
-  border-radius: 4px 0 0 4px;
-  border: none;
-  margin: auto;
-  padding: 0;
+.newsletter-form {
+  display: flex;
+  justify-content: center;
 }
+
+.email {
+  width: 452px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #F2F2F2;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button-subscribe {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  width: 232px;
+  border-radius: 0 4px 4px 0;
+  padding: 8px 50px;
+  display: inline-block;
+}
+
 
 /* Footer */
 .page-footer {
@@ -406,7 +467,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px 70px 70px;
-
 }
 
 .breadcrumbs-title {
@@ -442,7 +502,8 @@ body {
 .catalog-filter-group {
   border: 0;
   padding: 0;
-  margin-right: 70px;
+  margin: 0;
+  padding-right: 70px;
 }
 
 .catalog-filter-button {
@@ -451,7 +512,7 @@ body {
 }
 
 .housing {
-  margin-right: 150px;
+  padding-right: 150px;
 }
 
 .catalog-filter-title {
@@ -489,7 +550,7 @@ body {
   width: 191px;
   border: none;
   margin-bottom: 32px;
-  padding: 0;
+  padding: 8px 50px;
 }
 
 .button-reset {
@@ -549,22 +610,27 @@ body {
   margin-right: 70px;
 }
 
-.hotel-control .button-die {
-  width: 48px;
-  height: 48px;
+.hotel-card-list {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
-.button-die {
+.hotel-card-item {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
   box-sizing: border-box;
 }
 
-.button-slides {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.sorting-type {
-  margin-right: auto;
+.view {
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 
 /* product-card */
@@ -577,19 +643,29 @@ body {
   padding-top: 40px;
   padding-left: 0;
   margin: 0;
+  gap: 20px;
 }
 
-
-
-.product-card-image {
-  margin: 20px 20px 16px;
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 340px;
+  border: solid 1px #E6E6E6;
+  border-radius: 4px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .product-card-link {
+  width: 300px;
   text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
 }
 
 .product-card-title {
+  width: 300px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -597,17 +673,43 @@ body {
 }
 
 .product-card-descriptoin {
+  width: 140px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 16px;
 }
 
 .product-card-price {
+  width: 140px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.product-card-button {
+  width: 140px;
+  background-color: #756157;
+  padding: 8px 26px;
+  box-sizing: border-box;
+  margin-right: 18px;
+  margin-bottom: 16px;
+}
+
+.product-card-favourit {
+  padding: 8px 18px;
+  background-color: #7DB54F;
+  margin-bottom: 16px;
+}
+
+.product-card-favourites {
+  margin-bottom: 16px;
 }
 
 /* pagination */

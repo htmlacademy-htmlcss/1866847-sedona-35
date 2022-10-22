@@ -13,11 +13,6 @@
         <a class="header-logo-sedona" href="#">
           <img class="header-logo" src="images/home-page/logo-sedona.svg" alt="Логотип Седона" Width="140" height="70">
         </a>
-        <a class="header-search" href="#">
-          <span class="visually-hidden">
-            Поиск
-          </span>
-        </a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -29,21 +24,22 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">Гостиницы</a>
             </li>
-
           </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
+        </nav>
+          <div class="navigation-user">
+            <a class="navigation-user-link" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+              <a class="navigation-user-link" href="#">
                 <span class="visually-hidden">
                   Избранное 12
                 </span>
               </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-button" href="#">Хочу сюда!</a>
-            </li>
-          </ul>
-        </nav>
+              <a class="button navigation-button" href="#">Хочу сюда!</a>
+          </div>
+
       </header>
       <main class="main-container main-index">
           <div class="hero">
@@ -155,7 +151,7 @@
               <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!
               </p>
               <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                <input class="email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                   required>
                 <button class="button-subscribe" type="submit">
                   Подписаться
