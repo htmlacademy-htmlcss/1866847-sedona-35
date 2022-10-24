@@ -817,10 +817,10 @@ body {
 }
 
 @supports not selector(:focus-visible) {
-.navigation-button:focus {
-  background-color: #615048;
-  outline: none;
-}
+  .navigation-button:focus {
+    background-color: #615048;
+    outline: none;
+  }
 }
 
 .appointment-button:focus-visible {
@@ -829,10 +829,10 @@ body {
 }
 
 @supports not selector(:focus-visible) {
-.appointment-button:focus {
-  background-color: #615048;
-  outline: none;
-}
+  .appointment-button:focus {
+    background-color: #615048;
+    outline: none;
+  }
 }
 
 .product-card-button:focus-visible {
@@ -841,17 +841,17 @@ body {
 }
 
 @supports not selector(:focus-visible) {
-.product-card-button:focus {
-  background-color: #615048;
-  outline: none;
-}
+  .product-card-button:focus {
+    background-color: #615048;
+    outline: none;
+  }
 }
 
 .navigation-button:active,
 .appointment-button:active,
 .product-card-button:active {
   background-color: #756157;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .navigation-button:disabled,
@@ -947,40 +947,36 @@ body {
     background-color: #6C9E42;
     outline: none;
   }
-  }
+}
 
+.button-reset:disabled:hover {
+  color: #FFFFFF;
+  opacity: 0.1;
+  outline: none;
+  cursor: default;
+}
 
+.button-reset:hover {
+  opacity: 0.6;
+}
 
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
-  .button-reset:disabled:hover {
-    color: #FFFFFF;
-    opacity: 0.1;
-    outline: none;
-    cursor: default;
-  }
+.button-reset:disabled {
+  color: #FFFFFF;
+  opacity: 0.1;
+}
 
-  .button-reset:hover {
-    opacity: 0.6;
-  }
+.button-reset:focus-visible {
+  border-color: 3px solid #83B3D3;
+  outline: none;
+}
 
-  .button-reset:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-
-  .button-reset:disabled {
-    color: #FFFFFF;
-    opacity: 0.1;
-  }
-
-  .button-reset:focus-visible {
+@supports not selector(:focus-visible) {
+  .button-reset:focus {
     border-color: 3px solid #83B3D3;
     outline: none;
-
   }
-
-  @supports not selector(:focus-visible) {
-    .button-reset:focus {
-      border-color: 3px solid #83B3D3;
-      outline: none;
-    }
-    }
+}
