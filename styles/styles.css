@@ -324,14 +324,14 @@ body {
 
 /* Newsletter */
 .newsletter {
-  background-image: url(../images/home-page/subscribe.jpg);
+  background-color: #82B3D3;
+  background-image: url(../images/home-page/newsletter-subscribe.jpg);
   max-width: 1200px;
-  background-color: #000000;
   color: #FFFFFF;
   display: block;
   text-align: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   padding-top: 96px;
   padding-bottom: 104px;
 }
