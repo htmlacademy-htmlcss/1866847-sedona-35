@@ -39,7 +39,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-
 .button {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -101,7 +100,7 @@ body {
 
 .navigation-user .navigation-user-link {
   min-width: 44px;
-  min-height: 44px;
+  min-height: 64px;
 }
 
 .navigation-user-link:nth-child(1) {
@@ -186,9 +185,20 @@ body {
 
 .advantages-item {
   width: 400px;
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
   padding-top: 103px;
   padding-bottom: 121px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-item::after {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  width: 60px;
+  content: "";
+  align-self: center;
+  margin: 30px 0;
 }
 
 .background-hero {
@@ -224,7 +234,6 @@ body {
   width: 175px;
   text-align: center;
   margin: auto;
-  margin-bottom: 62px;
 }
 
 .advantages-description {
@@ -235,6 +244,7 @@ body {
   line-height: 21px;
   text-align: center;
   margin: auto;
+  order: 1;
 }
 
 .advantages-item-image {
@@ -245,10 +255,19 @@ body {
 
 .advantages-image {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 400px;
   text-align: center;
   padding-top: 92px;
   padding-bottom: 111px;
+}
+
+.advantages-image::after {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  width: 60px;
+  content: "";
+  align-self: center;
+  margin: 30px 0;
 }
 
 .background-translucent {
@@ -266,7 +285,6 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   margin: 0 auto;
-  margin-bottom: 62px;
 }
 
 .advantages-description-blue {
@@ -275,13 +293,79 @@ body {
   font-size: 18px;
   line-height: 21px;
   margin: 0 auto;
+  order: 1;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-item {
+  width: 400px;
+  min-height: 384px;
+  padding: 0 85px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-title {
+  width: 230px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.services-description {
+  color: #333333;
+  font-weight: 400;
+  width: 230px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0;
+}
+
+.services-list :nth-child(1)::before {
+  background-image: url(../images/home-page/advantages/house-advantages.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 75px;
+  height: 72px;
+  align-self: center;
+}
+
+.services-list :nth-child(2)::before {
+  background-image: url(../images/home-page/advantages/food.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 74px;
+  height: 70px;
+  align-self: center;
+}
+
+.services-list :nth-child(3)::before {
+  background-image: url(../images/home-page/advantages/gift.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 64px;
+  height: 76px;
+  align-self: center;
 }
 
 /* Appointment */
 .appointment {
   padding-top: 96px;
   padding-bottom: 96px;
-
 }
 
 .appointment-title {
@@ -392,7 +476,6 @@ body {
   display: inline-block;
 }
 
-
 /* Footer */
 .page-footer {
   display: flex;
@@ -452,9 +535,10 @@ body {
   color: #000000;
 }
 
-.footer-social-htmlacademy {
+.footer-social-logo {
   width: 115px;
-  margin-left: auto;
+  height: 34px;
+  fill: #000000;
 }
 
 /* Catalog-filtet */
@@ -588,7 +672,6 @@ body {
   margin-bottom: 40px;
 }
 
-
 .control-title {
   width: 338px;
   font-family: 'PT Sans';
@@ -711,8 +794,6 @@ body {
   padding: 8px 18px;
   background-color: #7DB54F;
 }
-
-
 
 .product-card-rating {
   background-color: #F2F2F2;
@@ -977,6 +1058,34 @@ body {
 @supports not selector(:focus-visible) {
   .button-reset:focus {
     border-color: 3px solid #83B3D3;
+    outline: none;
+  }
+}
+
+.htmlacademy-link:hover path {
+  fill: #756157;
+}
+
+.htmlacademy-link:activ path {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.htmlacademy-link:focus-visible path {
+  fill: #756157;
+}
+
+@supports not selector(:focus-visible) {
+  .htmlacademy-link:focus path {
+    fill: #756157;
+  }
+}
+
+.htmlacademy-link:focus-visible {
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+  .htmlacademy-link:focus {
     outline: none;
   }
 }
