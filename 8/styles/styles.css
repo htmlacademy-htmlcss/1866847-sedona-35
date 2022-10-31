@@ -21,6 +21,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -119,22 +120,22 @@ body {
   display: inline-block;
 }
 
-.navigation-link-favorites::before {
+.number-favorites {
   position: absolute;
-  background-color: #7DB54F;
-  border-radius: 50%;
-  color: #FFFFFF;
-  content: "12";
-  width: 20px;
-  height: 20px;
-  font-size: 10px;
-  line-height: 10px;
-  padding: 5px;
-  box-sizing: border-box;
   top: 11px;
   left: 20px;
+  width: 20px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius: 10px;
+  padding-top: 5px;
+  box-sizing: border-box;
 }
-
 
 .navigation-link {
   position: relative;
@@ -222,6 +223,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .advantages-item::after {
@@ -280,6 +282,7 @@ body {
 
 .advantages-item-image {
   display: flex;
+  flex-wrap: wrap;
   background-color: #82B3D3;
   color: #ffffff;
 }
@@ -287,6 +290,7 @@ body {
 .advantages-image {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 400px;
   text-align: center;
   padding-top: 92px;
@@ -342,6 +346,7 @@ body {
   padding: 0 85px;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
@@ -476,6 +481,7 @@ body {
 
 .newsletter-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -510,6 +516,7 @@ body {
 /* Footer */
 .page-footer {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
   text-align: center;
   margin: 0 auto;
@@ -536,6 +543,7 @@ body {
 
 .footer-social-link {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 47px;
@@ -655,6 +663,7 @@ body {
   line-height: 23px;
   width: 1060px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-group {
@@ -734,6 +743,7 @@ body {
 .hotel-selection {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding: 50px 70px 60px;
 }
 
@@ -793,6 +803,7 @@ body {
 
 .card-grid-toggle {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 48px;
@@ -832,7 +843,7 @@ body {
 
 .product-hotels {
   padding-bottom: 38px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .product-card {
@@ -928,10 +939,6 @@ body {
 }
 
 /* pagination */
-.pagination-container {
-  display: flex;
-}
-
 .pagination {
   display: flex;
   flex-wrap: wrap;
