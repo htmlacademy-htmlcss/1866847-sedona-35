@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <base href="https://htmlacademy-htmlcss.github.io/1866847-sedona-35/9/">
 </head>
 
   <body>
-    <div class="container">
+    <div class="container-wrapper">
       <header class="page-header">
         <a class="header-logo-sedona" href="index.html">
           <img class="header-logo" src="images/home-page/logo-sedona.svg" alt="Логотип Седона" Width="140" height="70">
@@ -45,27 +47,22 @@
         </div>
       </header>
       <main class="main-container main-index">
-        <div class="breadcrumbs">
+        <section class="breadcrumbs">
+          <div class="breadcrumbs-catalog">
           <h1 class="breadcrumbs-title">
             Гостиницы Седоны
           </h1>
           <ul class="breadcrumbs-filter ">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link-icon" href="index.html">
+              <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">На главную</span>
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link-arrow" href="#">
-
-              </a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link link-hotels" href="#">Гостиницы</a>
+              <a class=" breadcrumbs-link breadcrumbs-hotels" href="#">Гостиницы</a>
             </li>
           </ul>
-
-          <section class="catalog">
+        </div>
             <h2 class="visually-hidden">Выбор услуг и стоимость</h2>
             <form class="catalog-filtet" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -100,7 +97,7 @@
               </fieldset>
 
               <fieldset class="catalog-housing catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -158,8 +155,7 @@
                 <button class="button-reset" type="reset">Сбросить</button>
               </div>
             </form>
-          </section>
-        </div>
+        </section>
 
         <section class="hotel-selection">
           <div class="hotel-control">
