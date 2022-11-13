@@ -52,9 +52,9 @@
         </div>
 
         <section class="background-hero">
-          <h2 class="title-hero">
+          <h1 class="title-hero">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
-          </h2>
+          </h1>
           <p class="description-hero">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
 
@@ -62,9 +62,9 @@
           <ul class="advantages-list">
             <li class="advantages-item-image">
               <div class="advantages-image">
-                <h3 class="advantages-subscribe-blue">
+                <h2 class="advantages-subscribe-blue">
                   Настоящий городок
-                </h3>
+                </h2>
                 <p class="advantages-description-blue">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
@@ -73,25 +73,25 @@
                 height="384" alt="Настоящий городок.">
             </li>
             <li class="advantages-item">
-              <h3 class="advantages-title">
+              <h2 class="advantages-title">
                 Небольшая площадь
-              </h3>
+              </h2>
               <p class="advantages-description">
                 Все достопримечательности находятся очень близко
               </p>
             </li>
             <li class="advantages-item background-translucent">
-              <h3 class="advantages-title">
+              <h2 class="advantages-title">
                 Красивая дорога
-              </h3>
+              </h2>
               <p class="advantages-description">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
             <li class="advantages-item">
-              <h3 class="advantages-title">
+              <h2 class="advantages-title">
                 Мало туристов
-              </h3>
+              </h2>
               <p class="advantages-description">
                 Большинство едет в Гранд Каньон и толпится там
               </p>
@@ -100,9 +100,9 @@
               <img class="advantages-image-subscribe" src="images/home-page/advantages/picture-bridge.jpg" width="800"
                 height="384" alt="Картинка мост дьявола.">
               <div class="advantages-image">
-                <h3 class="advantages-subscribe-blue">
+                <h2 class="advantages-subscribe-blue">
                   Там есть<br> мост дьявола
-                </h3>
+                </h2>
                 <p class="advantages-description-blue">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
@@ -155,8 +155,8 @@
           <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field newsletter-input" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
+            <input class="field newsletter-input" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+              id="newsletter-email" required>
             <button class="button button-subscribe" type="submit">
               Подписаться
             </button>
@@ -222,14 +222,14 @@
           <label class="modal-search-text modal-arrival-date" for="arrival-date">Дата заезда:</label>
           <div class="modal-input-search">
             <input class="field modal-input modal-arrival-input" id="arrival-date" type="text" name="arrival-date"
-              placeholder="Укажите дату">
+              placeholder="Укажите дату" required>
             <!-- Чтобы убрать сообщение об ошибке устаревшей даты, нужно контейнеру ниже убрать класс "error-date-arrival-on" -->
             <span class="info-status modal-error-date error-date-arrival-on">Мы не можем отправить вас в прошлое.</span>
           </div>
           <label class="modal-search-text modal-departure-date" for="departure-date">Дата выезда:</label>
           <div class="modal-input-search">
             <input class="field modal-input modal-departure-input" id="departure-date" type="text" name="departure-date"
-              placeholder="Укажите дату">
+              placeholder="Укажите дату" required>
             <!-- Чтобы убрать сообщение о доступности номеров, нужно контейнеру ниже убрать класс "message-date-on" -->
             <span class="info-status message-date-on">На эти даты есть свободные номера. Пока есть.</span>
           </div>
@@ -242,7 +242,7 @@
               <span class="visually-hidden">Увеличить количество взрослых на единицу.</span>
             </button>
             <input class="field modal-input modal-less-more-input" id="adults" type="number" name="number-adults"
-              value="2">
+              value="2" required>
           </div>
           <span class="label-icon-children">
             <label class="modal-search-text modal-number-chields" for="chields">Дети:</label>
@@ -250,7 +250,7 @@
               <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
               <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут
                 с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                <span class="visually-hidden">Пояснение-учитывать возраст и количество детей при поиске гостиниц.</span>
+              <span class="visually-hidden">Пояснение-учитывать возраст и количество детей при поиске гостиниц.</span>
             </span>
           </span>
           <div class="modal-quantity modal-chields-quantity">
@@ -261,7 +261,7 @@
               <span class="visually-hidden">Увеличить количество детей на единицу.</span>
             </button>
             <input class="field modal-input modal-less-more-input" id="chields" type="number" name="number-chields"
-              value="2">
+              value="2" required>
           </div>
           <button class="button button-modal modal-search-button" type="submit">Найти</button>
         </form>
