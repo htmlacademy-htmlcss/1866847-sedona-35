@@ -67,6 +67,8 @@ body {
 
 .navigation-button {
   display: block;
+  width: 160px;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -136,7 +138,7 @@ body {
 }
 
 .navigation-user-favorites {
-  background-image: url(../images/home-page/heart.svg);
+  background-image: url("../images/home-page/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -203,7 +205,7 @@ body {
 }
 
 .hero {
-  background-image: url(../images/home-page/hero-spacebar.svg), url(../images/home-page/main-image-sedona.jpg);
+  background-image: url("../images/home-page/hero-spacebar.svg"), url("../images/home-page/main-image-sedona.jpg");
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -459,7 +461,7 @@ body {
 }
 
 .services-item-house::before {
-  background-image: url(../images/home-page/advantages/house-advantages.svg);
+  background-image: url("../images/home-page/advantages/house-advantages.svg");
   background-repeat: no-repeat;
   top: 80px;
   width: 76px;
@@ -468,7 +470,7 @@ body {
 
 
 .services-item-food::before {
-  background-image: url(../images/home-page/advantages/food.svg);
+  background-image: url("../images/home-page/advantages/food.svg");
   background-repeat: no-repeat;
   top: 80px;
   width: 74px;
@@ -477,7 +479,7 @@ body {
 }
 
 .services-item-souvenirs::before {
-  background-image: url(../images/home-page/advantages/gift.svg);
+  background-image: url("../images/home-page/advantages/gift.svg");
   background-repeat: no-repeat;
   position: absolute;
   content: "";
@@ -548,7 +550,7 @@ body {
 /* Newsletter */
 .newsletter {
   background-color: #82b3d3;
-  background-image: url(../images/home-page/newsletter-subscribe.jpg);
+  background-image: url("../images/home-page/newsletter-subscribe.jpg");
   max-width: 1200px;
   color: #ffffff;
   display: block;
@@ -715,7 +717,7 @@ body {
 
 /* Catalog-filtet */
 .breadcrumbs {
-  background-image: url(../images/catalog-page/filter-content.jpg);
+  background-image: url("../images/catalog-page/filter-content.jpg");
   max-width: 1200px;
   color: #ffffff;
   background-color: #82b3d3;
@@ -768,7 +770,7 @@ body {
 }
 
 .breadcrumbs-item:first-child .breadcrumbs-link {
-  background-image: url(../images/catalog-page/house-1.svg);
+  background-image: url("../images/catalog-page/house-1.svg");
   background-repeat: no-repeat;
   display: inline-block;
   width: 12px;
@@ -776,7 +778,7 @@ body {
 }
 
 .breadcrumbs-item:not(:first-child)::after {
-  background-image: url(../images/catalog-page/arrow-1.svg);
+  background-image: url("../images/catalog-page/arrow-1.svg");
   content: "";
   position: absolute;
   top: 5px;
@@ -1037,7 +1039,7 @@ body {
 }
 
 .catalog-infrastructure .control-input:checked + .control-label::before {
-  background-image: url(../images/catalog-page/checkbox-mark.svg);
+  background-image: url("../images/catalog-page/checkbox-mark.svg");
   background-position: 4px center;
 }
 
@@ -1073,7 +1075,7 @@ body {
 }
 
 .catalog-housing .control-input:checked + .control-label::before {
-  background-image: url(../images/catalog-page/catalog/radio-icons.svg);
+  background-image: url("../images/catalog-page/catalog/radio-icons.svg");
   background-position: center;
 }
 
@@ -1165,13 +1167,14 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  background-color: #ffffff;
   color: #333333;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding: 12px 50px 12px 18px;
   margin-left: 200px;
   margin-right: 70px;
-  background-image: url(../images/catalog-page/arrow.svg);
+  background-image: url("../images/catalog-page/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px top 50%;
   -webkit-appearance: none;
@@ -1335,7 +1338,7 @@ body {
 
 .raiting-star {
   margin: 0;
-  background-image: url(../images/catalog-page/star.svg);
+  background-image: url("../images/catalog-page/star.svg");
   background-repeat: repeat-x;
   background-position-y: center;
   -ms-flex-item-align: center;
@@ -1847,7 +1850,7 @@ body {
   background-color: #f2f2f2;
   border-radius: 50%;
   border: none;
-  background-image: url(../images/home-page/modal-close.svg);
+  background-image: url("../images/home-page/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
